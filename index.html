@@ -1,114 +1,314 @@
+
 <!DOCTYPE html>
 <html lang="es" class="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbería San Juan | Enlaces</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brandDark: '#0b0c0e',
-                        brandCard: '#141619',
-                        brandBorder: '#23272e',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sabas Olivera | Barber & Image Consultant</title>
+
+  <meta
+    name="description"
+    content="Sabas Olivera, barbero y asesor de imagen en San Juan, Argentina. Conocé mis trabajos y reservá tu turno por WhatsApp."
+  >
+  <meta name="theme-color" content="#0b0c0e">
+
+  <!-- Vista previa al compartir el enlace -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sabas Olivera | Barber">
+  <meta
+    property="og:description"
+    content="Cortes, estilo y atención al detalle. Reservá tu turno."
+  >
+  <meta
+    property="og:image"
+    content="https://images.unsplash.com/photo-1792432524819-fed38f0234b5?auto=format&fit=crop&fm=jpg&q=80&w=800"
+  >
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0b0c0e",
+            surface: "#121417",
+            line: "#25282d",
+            muted: "#92969e"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"]
+          }
         }
-    </script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0b0c0e;
-            color: #f3f4f6;
-        }
-    </style>
+      }
+    };
+  </script>
+
+  <!-- Iconos -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: #0b0c0e;
+      color: #f5f5f5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .profile-image {
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,.12),
+        0 12px 40px rgba(0,0,0,.35);
+    }
+
+    .link-card {
+      transition:
+        background-color .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+    }
+
+    .link-card:hover {
+      border-color: #494d55;
+      background-color: #191c20;
+    }
+
+    .link-card:active,
+    .primary-link:active {
+      transform: scale(.985);
+    }
+
+    .primary-link {
+      transition:
+        background-color .2s ease,
+        transform .2s ease;
+    }
+
+    .primary-link:hover {
+      background-color: #dedede;
+    }
+
+    a:focus-visible {
+      outline: 2px solid white;
+      outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-white selection:text-black">
 
-    <!-- Main Bio Content -->
-    <main class="w-full max-w-md mx-auto px-4 py-12 flex-grow flex flex-col justify-center items-center">
-        
-        <!-- Header Section -->
-        <div class="flex flex-col items-center text-center mb-8 w-full">
-            <!-- Profile Avatar -->
-            <div class="relative mb-5 group">
-                <img id="displayAvatar" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=300&h=300" alt="Sabas Barber" class="w-24 h-24 rounded-full object-cover border border-white/20 shadow-2xl">
-            </div>
+<body class="min-h-screen flex flex-col">
 
-            <!-- Status Badge -->
-            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#141619] border border-[#23272e] text-[11px] font-medium tracking-wide uppercase mb-3 text-gray-400">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span>Turnos Disponibles</span>
-            </div>
+  <main class="w-full max-w-md mx-auto px-5 pt-16 pb-12 flex-1">
 
-            <!-- Name Title -->
-            <h1 class="text-2xl font-semibold tracking-tight text-white mb-1">Sabas Barber</h1>
+    <!-- PERFIL -->
+    <header class="text-center flex flex-col items-center mb-10">
 
-            <!-- Subtitle -->
-            <p class="text-xs sm:text-sm text-gray-400 max-w-xs font-light">Barbero · San Juan, Argentina 💈</p>
-        </div>
+      <!-- FOTO DE PERFIL -->
+      <img
+        id="profileImage"
+        src="https://images.unsplash.com/photo-1792432524819-fed38f0234b5?auto=format&fit=crop&fm=jpg&q=80&w=800"
+        alt="Sabas Olivera, barbero y asesor de imagen"
+        width="112"
+        height="112"
+        fetchpriority="high"
+        class="profile-image w-28 h-28 rounded-full object-cover mb-6"
+      >
 
-        <!-- Links Stack -->
-        <div class="w-full space-y-3">
+      <!-- ESPECIALIDAD -->
+      <p class="text-[10px] uppercase tracking-[.28em] text-muted mb-3">
+        Barber · San Juan, Argentina
+      </p>
 
-            <!-- Primary Action: Turnero / Reservas -->
-            <a href="https://wa.me/5492644835956?text=Hola!%20Quiero%20reservar%20un%20turno" target="_blank" rel="noopener" class="w-full p-3.5 rounded-xl bg-white text-black font-medium flex items-center justify-between shadow-lg hover:bg-gray-200 active:scale-[0.98] transition-all duration-200">
-                <div class="flex items-center gap-3">
-                    <i data-lucide="calendar" class="w-4 h-4 text-black"></i>
-                    <span class="text-sm font-semibold tracking-tight">Reservar Turno Online</span>
-                </div>
-                <i data-lucide="arrow-right" class="w-4 h-4 opacity-80"></i>
-            </a>
+      <!-- NOMBRE -->
+      <h1 class="text-3xl font-semibold tracking-tight mb-2">
+        Sabas Olivera
+      </h1>
 
-            <!-- WhatsApp Directo -->
-            <a href="https://wa.me/5492644835956" target="_blank" rel="noopener" class="w-full p-3.5 rounded-xl bg-[#141619] border border-[#23272e] text-white font-medium flex items-center justify-between hover:border-white/30 active:scale-[0.98] transition-all duration-200 group">
-                <div class="flex items-center gap-3">
-                    <i data-lucide="message-square" class="w-4 h-4 text-gray-400 group-hover:text-emerald-400 transition-colors"></i>
-                    <span class="text-sm">WhatsApp Directo</span>
-                </div>
-                <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 transition-transform"></i>
-            </a>
+      <!-- DESCRIPCIÓN -->
+      <p class="text-sm text-muted leading-relaxed max-w-xs">
+        Asesor de imagen. Cortes definidos, estilo y atención al detalle.
+      </p>
 
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/sabas.barber" target="_blank" rel="noopener" class="w-full p-3.5 rounded-xl bg-[#141619] border border-[#23272e] text-white font-medium flex items-center justify-between hover:border-white/30 active:scale-[0.98] transition-all duration-200 group">
-                <div class="flex items-center gap-3">
-                    <i data-lucide="instagram" class="w-4 h-4 text-gray-400 group-hover:text-pink-400 transition-colors"></i>
-                    <span class="text-sm">Instagram / Cortes</span>
-                </div>
-                <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 transition-transform"></i>
-            </a>
+      <!-- RESERVAS -->
+      <div class="flex items-center gap-2 mt-5 text-[11px] tracking-wide text-gray-400">
+        <span class="w-1.5 h-1.5 rounded-full bg-white/80"></span>
+        <span>RESERVAS POR WHATSAPP</span>
+      </div>
 
-            <!-- Ubicación Google Maps -->
-            <a href="https://maps.google.com" target="_blank" rel="noopener" class="w-full p-3.5 rounded-xl bg-[#141619] border border-[#23272e] text-white font-medium flex items-center justify-between hover:border-white/30 active:scale-[0.98] transition-all duration-200 group">
-                <div class="flex items-center gap-3">
-                    <i data-lucide="map-pin" class="w-4 h-4 text-gray-400 group-hover:text-red-400 transition-colors"></i>
-                    <span class="text-sm">Ubicación / Cómo llegar</span>
-                </div>
-                <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400 group-hover:translate-x-0.5 transition-transform"></i>
-            </a>
+    </header>
 
-        </div>
-    </main>
+    <!-- ENLACES PRINCIPALES -->
+    <nav aria-label="Enlaces principales" class="space-y-3">
 
-    <!-- Minimal Footer -->
-    <footer class="w-full max-w-md mx-auto px-4 py-6 text-center text-xs text-gray-500">
-        <p>© <span id="year">2026</span> Sabas Barber · San Juan, Argentina</p>
-    </footer>
+      <!-- RESERVAR TURNO -->
+      <a
+        href="https://wa.me/5492644835956?text=Hola%2C%20Sabas.%20Quiero%20consultar%20por%20un%20turno."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="primary-link w-full min-h-[58px] rounded-xl bg-white text-black px-5 py-4 flex items-center justify-between gap-4"
+      >
+        <span class="flex items-center gap-3">
+          <i
+            data-lucide="calendar-check"
+            class="w-5 h-5"
+            aria-hidden="true"
+          ></i>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        lucide.createIcons();
-    </script>
+          <span class="text-sm font-semibold">
+            Reservar mi turno
+          </span>
+        </span>
+
+        <i
+          data-lucide="arrow-up-right"
+          class="w-4 h-4"
+          aria-hidden="true"
+        ></i>
+      </a>
+
+      <!-- CONTACTO DIRECTO -->
+      <a
+        href="https://wa.me/5492644835956"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-card min-h-[58px] rounded-xl border border-line bg-surface px-5 py-4 flex items-center justify-between gap-4"
+      >
+        <span class="flex items-center gap-3">
+          <i
+            data-lucide="message-circle"
+            class="w-5 h-5 text-gray-400"
+            aria-hidden="true"
+          ></i>
+
+          <span class="text-sm font-medium">
+            Contacto directo
+          </span>
+        </span>
+
+        <i
+          data-lucide="chevron-right"
+          class="w-4 h-4 text-gray-500"
+          aria-hidden="true"
+        ></i>
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a
+        href="https://www.instagram.com/sabas.barber/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-card min-h-[58px] rounded-xl border border-line bg-surface px-5 py-4 flex items-center justify-between gap-4"
+      >
+        <span class="flex items-center gap-3">
+          <i
+            data-lucide="instagram"
+            class="w-5 h-5 text-gray-400"
+            aria-hidden="true"
+          ></i>
+
+          <span class="text-sm font-medium">
+            Mis trabajos
+          </span>
+        </span>
+
+        <i
+          data-lucide="arrow-up-right"
+          class="w-4 h-4 text-gray-500"
+          aria-hidden="true"
+        ></i>
+      </a>
+
+      <!-- UBICACIÓN -->
+      <!-- Reemplazar la búsqueda genérica por tu ubicación exacta -->
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=barber%C3%ADa+San+Juan+Argentina"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-card min-h-[58px] rounded-xl border border-line bg-surface px-5 py-4 flex items-center justify-between gap-4"
+      >
+        <span class="flex items-center gap-3">
+          <i
+            data-lucide="map-pin"
+            class="w-5 h-5 text-gray-400"
+            aria-hidden="true"
+          ></i>
+
+          <span class="text-sm font-medium">
+            Ubicación
+          </span>
+        </span>
+
+        <i
+          data-lucide="arrow-up-right"
+          class="w-4 h-4 text-gray-500"
+          aria-hidden="true"
+        ></i>
+      </a>
+
+    </nav>
+
+    <!-- FIRMA -->
+    <div class="mt-10 text-center">
+      <p class="text-[10px] uppercase tracking-[.22em] text-gray-600">
+        Imagen · Técnica · Detalle
+      </p>
+    </div>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="px-5 py-6 text-center border-t border-white/[.06]">
+
+    <p class="text-[11px] text-gray-600">
+      © <span id="year"></span> Sabas Olivera
+    </p>
+
+    <p class="text-[10px] text-gray-700 mt-2">
+      San Juan, Argentina
+    </p>
+
+  </footer>
+
+  <!-- FUNCIONES -->
+  <script>
+    // Actualizar el año automáticamente
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Inicializar iconos
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+
 </body>
 </html>
