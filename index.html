@@ -1,155 +1,659 @@
+
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b0b0b">
-  <meta name="description" content="Sabas Olivera, asesor de imagen. Cortes personalizados, atención al detalle y reservas por WhatsApp en San Juan.">
-  <title>Sabas Olivera — Asesor de imagen</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0b0b0b;--panel:#121212;--panel2:#171715;--gold:#c8aa70;--gold2:#e1c895;--text:#f3f0e9;--muted:#aaa69e;--line:#302b22;--max:1160px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6}body,button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-width:100%}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700}.section{padding:88px 0}.section-head{max-width:660px;margin-bottom:34px}.section-head h2{font:700 clamp(2rem,5vw,3.4rem)/1.08 Manrope,sans-serif;letter-spacing:-.045em;margin:12px 0}.section-head p{color:var(--muted);max-width:540px;margin:12px 0 0}.gold{color:var(--gold)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--gold);padding:13px 19px;min-height:48px;font-weight:700;font-size:.9rem;transition:transform .25s,background .25s,color .25s;cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--gold);color:#111}.btn-primary:hover{background:var(--gold2)}.btn-outline{background:transparent;color:var(--text)}.btn-outline:hover{background:var(--gold);color:#111}.text-link{color:var(--gold2);text-decoration:underline;text-underline-offset:4px}.nav{height:76px;position:sticky;top:0;z-index:30;background:rgba(11,11,11,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(200,170,112,.14)}.nav-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:800 1.2rem Manrope,sans-serif;letter-spacing:.04em}.brand span{color:var(--gold)}.nav-links{display:flex;align-items:center;gap:26px;color:#d0ccc4;font-size:.86rem}.nav-links a:hover{color:var(--gold)}.nav-cta{padding:10px 14px;min-height:40px}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 12px}
-    .hero{min-height:calc(86vh - 76px);display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid #201d17}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(200,170,112,.12),transparent 36%),linear-gradient(100deg,#0b0b0b 8%,rgba(11,11,11,.97) 40%,rgba(11,11,11,.65) 100%);pointer-events:none}.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:5vw;padding:66px 0 74px}.hero-copy{max-width:620px}.hero h1{font:800 clamp(3.2rem,8vw,6.6rem)/.94 Manrope,sans-serif;letter-spacing:-.075em;margin:20px 0}.hero h1 span{display:block;color:var(--gold)}.hero-copy>p{font-size:1.08rem;color:#c1bdb5;max-width:460px;margin:22px 0 28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{font-size:.75rem;color:#88847c;margin-top:22px;letter-spacing:.04em}.portrait-shell{position:relative;justify-self:end;width:min(100%,440px)}.portrait-frame{aspect-ratio:4/5;position:relative;overflow:hidden;background:linear-gradient(145deg,#29251f,#101010);border:1px solid #4a3c26}.portrait-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.58),transparent 35%,rgba(0,0,0,.08));pointer-events:none}.portrait-frame img{width:100%;height:100%;object-fit:cover;filter:brightness(.84);transition:filter .5s,transform .7s}.portrait-frame:hover img{transform:scale(1.025)}.portrait-hidden .portrait-frame img{opacity:0;pointer-events:none}.portrait-hidden .portrait-frame{background:radial-gradient(ellipse at 50% 38%,#34302a 0,#191815 43%,#0c0c0c 76%)}.portrait-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;text-align:center;padding:24px;z-index:2}.portrait-placeholder .monogram{font:800 clamp(4rem,10vw,7rem)/1 Manrope;color:rgba(200,170,112,.2);letter-spacing:-.1em}.portrait-placeholder p{color:#d1c6b2;max-width:230px;font-size:.9rem;margin:0}.reveal-btn{border:1px solid var(--gold);background:#0c0c0c;color:var(--gold2);padding:12px 16px;font-size:.8rem;font-weight:700;cursor:pointer}.portrait-visible .portrait-placeholder{display:none}.portrait-visible .portrait-frame img{opacity:1}.portrait-caption{display:flex;justify-content:space-between;gap:14px;padding:13px 2px 0;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:#a9a198}.portrait-caption span:last-child{color:var(--gold)}
-    .intro-strip{border-bottom:1px solid var(--line);background:#10100f}.strip-grid{display:grid;grid-template-columns:repeat(3,1fr)}.strip-item{padding:24px 20px;border-right:1px solid var(--line)}.strip-item:first-child{padding-left:0}.strip-item:last-child{border:0}.strip-item strong{display:block;font:700 1rem Manrope;margin-bottom:3px}.strip-item span{font-size:.82rem;color:var(--muted)}
-    .gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.gallery-item{position:relative;overflow:hidden;background:#161616;border:1px solid #24211c;grid-column:span 4;aspect-ratio:4/5}.gallery-item:nth-child(1),.gallery-item:nth-child(5){grid-column:span 5}.gallery-item:nth-child(2),.gallery-item:nth-child(6){grid-column:span 3}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .65s,filter .4s;filter:saturate(.92)}.gallery-item:hover img{transform:scale(1.045);filter:saturate(1.05)}.gallery-item:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.38));pointer-events:none}.gallery-note{color:var(--muted);font-size:.8rem;margin-top:18px}
-    .services{background:#10100f;border-block:1px solid #211e18}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service-card{display:flex;flex-direction:column;min-height:100%;background:linear-gradient(145deg,#171715,#101010);border:1px solid #332c20;padding:26px;position:relative;overflow:hidden}.service-card.featured{border-color:#8f7548}.service-card.featured:before{content:"RECOMENDADO";position:absolute;right:-30px;top:19px;transform:rotate(35deg);background:var(--gold);color:#111;padding:4px 34px;font-size:.58rem;letter-spacing:.1em;font-weight:800}.service-number{font:700 .78rem Manrope;color:var(--gold);letter-spacing:.12em}.service-card h3{font:700 1.42rem/1.2 Manrope;margin:18px 0 10px}.service-card p{color:var(--muted);font-size:.9rem;margin:0 0 22px}.service-meta{display:flex;gap:14px;flex-wrap:wrap;color:#d0c8ba;font-size:.8rem;margin-top:auto;padding:16px 0;border-top:1px solid var(--line)}.service-price{font:700 1.65rem Manrope;color:var(--gold2);margin-bottom:18px}.service-card .btn{width:100%;margin-top:4px}.price-gate{margin-top:28px;padding:26px;border:1px solid var(--line);background:#0c0c0c;display:flex;align-items:center;justify-content:space-between;gap:24px}.price-gate h3{font:700 1.1rem Manrope;margin:0 0 4px}.price-gate p{font-size:.84rem;color:var(--muted);margin:0}.prices-locked .service-price{filter:blur(7px);user-select:none;pointer-events:none}.prices-locked .extra strong{filter:blur(6px);user-select:none}.extras-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}.extra{display:flex;justify-content:space-between;gap:12px;padding:15px;border-bottom:1px solid var(--line);font-size:.87rem}.extra strong{color:var(--gold2);white-space:nowrap}
-    .reviews-top{display:flex;align-items:center;gap:18px;margin:10px 0 30px}.rating-number{font:800 3rem/.95 Manrope;letter-spacing:-.06em}.stars{color:var(--gold2);letter-spacing:.14em}.rating-caption{color:var(--muted);font-size:.78rem}.reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.review-card{background:#111;border:1px solid #28241d;padding:22px;min-height:170px;display:flex;flex-direction:column;gap:10px}.review-top{display:flex;justify-content:space-between;align-items:start;gap:12px}.review-name{font-weight:700;font-size:.94rem}.review-date{color:#8d8982;font-size:.72rem;white-space:nowrap}.review-card blockquote{margin:0;color:#d5d0c7;font-size:.92rem}.review-source{font-size:.72rem;color:#88847c;margin-top:16px}
-    .availability{background:#15130f;border-block:1px solid #3c3020;padding:20px 0}.availability-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.availability-copy{display:flex;align-items:center;gap:14px}.status-dot{width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(200,170,112,.12);flex-shrink:0}.availability-copy strong{display:block;font-size:.9rem}.availability-copy span{font-size:.8rem;color:var(--muted)}
-    .faq-list{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line)}summary{cursor:pointer;list-style:none;padding:20px 0;display:flex;justify-content:space-between;gap:16px;font-weight:600}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--gold);font-size:1.3rem;line-height:1}details[open] summary:after{content:"−"}details p{color:var(--muted);font-size:.9rem;max-width:760px;margin:0;padding:0 24px 22px 0}
-    .closing{background:radial-gradient(ellipse at 80% 10%,rgba(200,170,112,.12),transparent 42%),#10100f;border-top:1px solid var(--line);text-align:center;padding:90px 0}.closing h2{font:800 clamp(2.2rem,6vw,4.5rem)/1.05 Manrope;letter-spacing:-.06em;max-width:750px;margin:16px auto}.closing p{color:var(--muted);max-width:520px;margin:18px auto 28px}.closing-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.footer{padding:28px 0 90px;border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.footer small{color:#8f8b84}.footer-links{display:flex;gap:18px;font-size:.8rem;color:#c2bdb4}.footer-links a:hover{color:var(--gold)}.floating-wa{position:fixed;right:18px;bottom:18px;z-index:35;background:#c8aa70;color:#111;width:56px;height:56px;display:grid;place-items:center;border-radius:50%;box-shadow:0 8px 30px #0008;font-size:1.5rem;font-weight:800;border:1px solid #e1c895}.floating-wa:hover{transform:translateY(-3px)}.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.in-view{opacity:1;transform:translateY(0)}.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:#e1c895;color:#111;padding:10px 16px;font-size:.85rem;font-weight:700;z-index:60;opacity:0;pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
-    @media(max-width:800px){.wrap{width:min(var(--max),calc(100% - 30px))}.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:#101010;border-bottom:1px solid var(--line);padding:18px 20px 22px;flex-direction:column;align-items:stretch;gap:16px}.nav-links.open{display:flex}.nav-cta{display:none}.menu-toggle{display:block}.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;gap:36px;padding:64px 0 54px}.hero-copy{max-width:620px}.hero h1{font-size:clamp(3.4rem,14vw,5.6rem)}.portrait-shell{justify-self:start;width:min(100%,430px)}.portrait-frame{aspect-ratio:5/4}.strip-grid{grid-template-columns:1fr}.strip-item,.strip-item:first-child{padding:17px 0;border-right:0;border-bottom:1px solid var(--line)}.strip-item:last-child{border-bottom:0}.section{padding:66px 0}.gallery-grid{gap:9px}.gallery-item,.gallery-item:nth-child(n){grid-column:span 6;aspect-ratio:4/5}.gallery-item:nth-child(1){grid-column:span 12;aspect-ratio:5/4}.service-grid{grid-template-columns:1fr}.service-card{padding:24px}.price-gate{align-items:flex-start;flex-direction:column}.extras-grid{grid-template-columns:1fr}.reviews-grid{grid-template-columns:1fr}.availability-inner{align-items:flex-start;flex-direction:column}.closing{padding:70px 0}.footer-inner{align-items:flex-start;flex-direction:column}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Sabas Olivera, asesor de imagen. Servicios personalizados, cortes de cabello y reservas en San Juan.">
+<title>Sabas Olivera | Asesor de imagen</title>
+
+<style>
+:root {
+  --fondo: #090909;
+  --superficie: #111110;
+  --dorado: #c8a96b;
+  --dorado-claro: #e4cc95;
+  --texto: #f4f0e8;
+  --secundario: #aaa69d;
+  --linea: rgba(200,169,107,.27);
+  --serif: Georgia, "Times New Roman", serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+img { display: block; max-width: 100%; }
+.wrap { width: min(1100px, calc(100% - 40px)); margin: auto; }
+.eyebrow {
+  color: var(--dorado);
+  font-size: .68rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(9,9,9,.93);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+.nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.logo { font: 1.1rem var(--serif); letter-spacing: .1em; }
+.logo span { color: var(--dorado); }
+.nav-links { display: flex; gap: 22px; font-size: .78rem; color: #ccc7bd; }
+.nav-links a:hover { color: var(--dorado-claro); }
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--dorado);
+  color: var(--dorado-claro);
+  background: transparent;
+  padding: 12px 18px;
+  font-size: .73rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .25s, color .25s;
+}
+.button:hover { background: var(--dorado); color: #090909; }
+.hero {
+  min-height: 76vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0;
+}
+.hero:after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  right: -250px;
+  top: -50px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,169,107,.13), transparent 68%);
+}
+.hero-content { position: relative; z-index: 1; max-width: 850px; }
+.hero h1 {
+  font: clamp(3.3rem, 9vw, 7.3rem)/.98 var(--serif);
+  letter-spacing: -.055em;
+  font-weight: 400;
+  margin: 22px 0;
+}
+.hero h1 em { color: var(--dorado); font-weight: 400; }
+.hero p { color: #bbb6ad; max-width: 500px; margin-bottom: 30px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-note {
+  margin-top: 52px;
+  color: #77736b;
+  font-size: .68rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.section { padding: 90px 0; }
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+h2 {
+  font: clamp(2.3rem, 5vw, 4rem)/1.06 var(--serif);
+  font-weight: 400;
+  letter-spacing: -.04em;
+  margin: 10px 0 0;
+}
+.section-intro { color: var(--secundario); max-width: 390px; font-size: .9rem; }
+.gold-line { height: 1px; width: 60px; background: var(--dorado); margin: 24px 0; }
+.about {
+  background: linear-gradient(110deg, #121211, #090909 75%);
+  border-block: 1px solid rgba(255,255,255,.05);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  gap: 65px;
+  align-items: center;
+}
+.about-copy p { color: #c4bfb5; max-width: 570px; }
+.photo-reveal {
+  min-height: 340px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.photo-reveal .monogram { font: 5rem var(--serif); color: var(--dorado); }
+.photo-reveal p { color: var(--secundario); font-size: .82rem; max-width: 280px; }
+.photo-reveal img { display: none; width: 100%; max-height: 440px; object-fit: cover; object-position: center 35%; margin-bottom: 15px; }
+.photo-reveal.open img { display: block; }
+.photo-reveal.open .monogram,
+.photo-reveal.open .reveal-copy { display: none; }
+.photo-reveal.open { padding: 14px; }
+.photo-reveal.open .button { width: 100%; }
+.services { position: relative; }
+.instagram-gate {
+  background: #11100d;
+  border: 1px solid var(--line);
+  padding: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.instagram-gate p { color: var(--secundario); font-size: .85rem; margin-bottom: 0; }
+.gate-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+  padding: 42px 0;
+  border-bottom: 1px solid var(--line);
+}
+.service:nth-child(even) .service-copy { order: 2; }
+.service:nth-child(even) .service-meta {
+  order: 1;
+  align-items: flex-end;
+  text-align: right;
+}
+.service-number { color: var(--dorado); font-size: .68rem; letter-spacing: .15em; }
+.service h3 { font: clamp(1.9rem, 4vw, 3rem)/1.08 var(--serif); font-weight: 400; margin: 12px 0 16px; }
+.service-copy p { color: #bbb6ad; max-width: 470px; margin: 0; }
+.service-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.price-label, .duration { color: var(--secundario); font-size: .7rem; letter-spacing: .15em; }
+.price { font: clamp(2.7rem, 5vw, 4rem)/1 var(--serif); color: var(--dorado-claro); }
+.promo { color: var(--dorado); border: 1px solid var(--dorado); padding: 4px 10px; font-size: .65rem; letter-spacing: .18em; }
+.service-meta .button { margin-top: 12px; }
+.extras { margin-top: 50px; }
+.extras h3 { font: 2rem var(--serif); font-weight: 400; }
+.extra-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.extra { border-top: 1px solid var(--line); padding: 18px 0; color: #d3cec5; font-size: .82rem; }
+.extra strong { display: block; color: var(--dorado-claro); font: 1.4rem var(--serif); margin-top: 8px; }
+.gallery { display: grid; grid-template-columns: repeat(12,1fr); gap: 12px; }
+.gallery-item {
+  grid-column: span 4;
+  aspect-ratio: 4/5;
+  border: 0;
+  padding: 0;
+  background: #151515;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery-item:nth-child(1), .gallery-item:nth-child(5) { grid-column: span 5; }
+.gallery-item:nth-child(2), .gallery-item:nth-child(6) { grid-column: span 3; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.gallery-item:hover img { transform: scale(1.045); }
+.gallery-item:after {
+  content: "↗";
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  color: var(--dorado-claro);
+  opacity: 0;
+}
+.gallery-item:hover:after { opacity: 1; }
+.reviews {
+  background: #10100f;
+  border-block: 1px solid rgba(255,255,255,.05);
+}
+.review-top { color: var(--dorado); letter-spacing: .13em; font-size: .75rem; margin-bottom: 22px; }
+.review-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.review { background: #10100f; padding: 24px; min-height: 180px; display: flex; flex-direction: column; }
+.stars { color: var(--dorado); letter-spacing: .12em; }
+.review blockquote { font: 1.08rem/1.45 var(--serif); margin: 14px 0 22px; }
+.review footer { color: #8f8a81; font-size: .68rem; margin-top: auto; }
+.disclaimer { color: #69655e; font-size: .58rem; line-height: 1.5; margin-top: 18px; }
+.faq-list { border-top: 1px solid var(--line); }
+details { border-bottom: 1px solid var(--line); padding: 20px 0; }
+summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 20px; font: 1.25rem var(--serif); }
+summary::-webkit-details-marker { display: none; }
+summary:after { content: "+"; color: var(--dorado); font-family: Arial,sans-serif; }
+details[open] summary:after { content: "−"; }
+details p { color: var(--secundario); max-width: 760px; }
+.contact {
+  background: linear-gradient(130deg,#17140e,#0b0b0a 75%);
+  border-block: 1px solid var(--line);
+}
+.contact-grid { display: grid; grid-template-columns: 1fr .7fr; gap: 40px; align-items: center; }
+.contact p { color: var(--secundario); max-width: 500px; }
+.contact-note { border-left: 1px solid var(--dorado); padding: 10px 0 10px 24px; color: #c8c2b7; font-size: .86rem; }
+.site-footer { padding: 30px 0; color: #79746b; font-size: .7rem; letter-spacing: .05em; }
+.footer-row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.footer-social { display: flex; gap: 18px; color: var(--dorado-claro); }
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 30;
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--dorado);
+  color: #090909;
+  box-shadow: 0 8px 28px #0008;
+  font-size: 1.2rem;
+}
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0,0,0,.96);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 55px;
+}
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 100%; max-height: 84vh; object-fit: contain; }
+.lb-button {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--dorado);
+  background: #111;
+  color: var(--dorado-claro);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.lb-close { top: 18px; right: 18px; }
+.lb-prev { left: 15px; }
+.lb-next { right: 15px; }
+.lb-count { position: absolute; bottom: 15px; color: #d1c8b6; font-size: .7rem; letter-spacing: .15em; }
+.fade { opacity: 0; transform: translateY(15px); transition: opacity .65s, transform .65s; }
+.fade.visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *:before, *:after { transition: none !important; }
+  .fade { opacity: 1; transform: none; }
+}
+@media (max-width: 760px) {
+  .wrap { width: calc(100% - 32px); }
+  .nav { height: 62px; }
+  .nav-links { display: none; }
+  .nav .button { padding: 9px 11px; font-size: .62rem; }
+  .hero { min-height: 70vh; padding: 75px 0; }
+  .hero h1 { font-size: clamp(3.2rem, 14vw, 5.2rem); }
+  .section { padding: 68px 0; }
+  .section-heading { display: block; }
+  .section-intro { margin-top: 17px; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+  .photo-reveal { min-height: 280px; }
+  .instagram-gate { display: block; padding: 24px; }
+  .gate-actions { margin-top: 18px; }
+  .service { grid-template-columns: 1fr; gap: 20px; padding: 32px 0; }
+  .service:nth-child(even) .service-copy, .service:nth-child(even) .service-meta { order: initial; }
+  .service:nth-child(even) .service-meta { align-items: flex-start; text-align: left; }
+  .service-meta { padding-left: 16px; border-left: 1px solid var(--dorado); }
+  .extra-grid { grid-template-columns: 1fr; gap: 0; }
+  .gallery { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+  .gallery-item, .gallery-item:nth-child(n) { grid-column: span 1; aspect-ratio: 3/4; }
+  .review-grid { grid-template-columns: 1fr; }
+  .review { min-height: 0; }
+  .lightbox { padding: 55px 12px; }
+  .lb-prev { left: 7px; }
+  .lb-next { right: 7px; }
+  .lb-button { width: 38px; height: 38px; }
+  .contact-note { padding-left: 18px; }
+  .footer-row { flex-direction: column; }
+}
+</style>
 </head>
+
 <body>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#inicio" aria-label="Sabas Olivera, inicio">SO<span>.</span></a>
-      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
-        <a href="#trabajos">Trabajos</a><a href="#servicios">Servicios</a><a href="#opiniones">Opiniones</a><a href="#preguntas">Preguntas</a>
-        <a class="btn btn-outline nav-cta" href="https://wa.me/5492644835956?text=Hola%20Sabas%2C%20quiero%20consultar%20por%20un%20turno" target="_blank" rel="noopener">Reservar turno ↗</a>
-      </nav>
-      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menú</button>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#inicio">SABAS <span>OLIVERA</span></a>
+    <nav class="nav-links" aria-label="Navegación">
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="button" href="#servicios">Reservar turno ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-content">
+    <div class="eyebrow">Sabas Olivera · Asesor de imagen</div>
+    <h1>Tu imagen.<br><em>Tu mejor versión.</em></h1>
+    <p>Un servicio enfocado en los detalles, las técnicas y las texturas para encontrar un estilo que se adapte a vos.</p>
+    <div class="actions">
+      <a class="button" href="#servicios">Descubrir servicios ↗</a>
+      <a class="button" href="#trabajos">Ver trabajos ↗</a>
     </div>
-  </header>
+    <div class="hero-note">Atención personalizada · San Juan, Argentina</div>
+  </div>
+</section>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="wrap hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow">Barbería · Asesoría de imagen</div>
-          <h1>SABAS <span>OLIVERA.</span></h1>
-          <p>Un estilo propio. Cada detalle cuenta. Cortes personalizados, atención precisa y una experiencia pensada alrededor de vos.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#servicios">Ver servicios <span>↘</span></a><a class="btn btn-outline" href="https://wa.me/5492644835956?text=Hola%20Sabas%2C%20quiero%20reservar%20un%20turno" target="_blank" rel="noopener">Reservar por WhatsApp ↗</a></div>
-          <div class="hero-note">SAN JUAN, ARGENTINA · ATENCIÓN CON TURNO</div>
+<section class="section about" id="sobre-mi">
+  <div class="wrap about-grid">
+    <div class="about-copy fade">
+      <div class="eyebrow">Detrás de cada detalle</div>
+      <h2>Una imagen que<br>hable por vos.</h2>
+      <div class="gold-line"></div>
+      <p>Mi trabajo va más allá de un corte. Busco entender lo que querés transmitir y trabajar cada detalle para lograr un resultado que encaje con vos.</p>
+      <p>La atención, la técnica y el cuidado de cada terminación forman parte de la experiencia.</p>
+    </div>
+    <div class="photo-reveal fade" id="photoReveal">
+      <div class="monogram">S.</div>
+      <div class="reveal-copy">
+        <div class="eyebrow">Conocé quién está detrás</div>
+        <p>Descubrí un poco más sobre mí y mi trabajo.</p>
+      </div>
+      <img src="https://raw.githubusercontent.com/sabasolivera/sabasbarber/main/IMG_1698.jpeg" alt="Sabas Olivera, asesor de imagen" loading="lazy">
+      <button class="button" id="revealPhoto" type="button">Descubrir a Sabas ↗</button>
+    </div>
+  </div>
+</section>
+
+<section class="section services" id="servicios">
+  <div class="wrap">
+    <div class="section-heading fade">
+      <div><div class="eyebrow">Servicios personalizados</div><h2>Elegí tu experiencia.</h2></div>
+      <p class="section-intro">Cada servicio está pensado para trabajar tu imagen con atención al detalle. Elegí la opción que mejor se adapte a lo que buscás.</p>
+    </div>
+
+    <div class="instagram-gate fade" id="instagramGate">
+      <div>
+        <div class="eyebrow">Conocé mi trabajo</div>
+        <strong>Primero, conectemos.</strong>
+        <p>Visitá mi Instagram para conocer más cortes y resultados. Después podés consultar los servicios y reservar.</p>
+      </div>
+      <div class="gate-actions">
+        <a class="button" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <button class="button" id="showServices" type="button">Mostrar servicios ↘</button>
+      </div>
+    </div>
+
+    <div id="serviceContent" hidden>
+      <article class="service fade">
+        <div class="service-copy">
+          <div class="service-number">01 / CAMBIO DE LOOK</div>
+          <h3>CAMBIO DE LOOK</h3>
+          <p>De atención al detalle en tu corte de cabello.<br>Combino diferentes técnicas y texturas para lograr tu mejor versión.</p>
         </div>
-        <div class="portrait-shell reveal">
-          <div class="portrait-frame portrait-hidden" id="portraitFrame">
-            <img src="https://raw.githubusercontent.com/sabasolivera/sabasbarber/main/IMG_1698.jpeg" alt="Sabas Olivera" loading="eager" onerror="this.style.display='none';document.getElementById('portraitFallback').hidden=false;">
-            <div class="portrait-placeholder" id="portraitPlaceholder">
-              <div class="monogram">SO.</div>
-              <p>Conocé quién está detrás de cada detalle.</p>
-              <button class="reveal-btn" id="revealPortrait">Descubrir a Sabas ↗</button>
-            </div>
-            <div id="portraitFallback" hidden class="portrait-placeholder">
-  <div class="monogram">SO.</div>
-  <p></p>
+        <div class="service-meta">
+          <span class="price-label">DESDE</span>
+          <div class="price">$20.000</div>
+          <div class="duration">50 MINUTOS</div>
+          <a class="button book" data-service="Cambio de look" data-price="$20.000" href="#">Reservar por WhatsApp ↗</a>
+        </div>
+      </article>
+
+      <article class="service fade">
+        <div class="service-copy">
+          <div class="service-number">02 / CAMBIO DE LOOK (COMPLETO)</div>
+          <h3>CAMBIO DE LOOK<br>(COMPLETO)</h3>
+          <p>De servicio incluyendo corte de cabello + barba, trabajando cada detalle para lograr un cambio de look completo y adaptado a vos.</p>
+        </div>
+        <div class="service-meta">
+          <span class="price-label">DESDE</span>
+          <div class="price">$28.000</div>
+          <div class="duration">80 MINUTOS</div>
+          <a class="button book" data-service="Cambio de look (completo)" data-price="$28.000" href="#">Reservar por WhatsApp ↗</a>
+        </div>
+      </article>
+
+      <article class="service fade">
+        <div class="service-copy">
+          <div class="service-number">03 / SERVICIO SIGNATURE</div>
+          <h3>SERVICIO SIGNATURE</h3>
+          <p>Todos los servicios en uno solo, con el agregado de una limpieza profunda de la piel, para completar tu cambio de look.</p>
+        </div>
+        <div class="service-meta">
+          <span class="promo">PROMO</span>
+          <div class="price">$39.900</div>
+          <div class="duration">1 HORA Y 40 MINUTOS</div>
+          <a class="button book" data-service="Servicio Signature" data-price="$39.900" href="#">Reservar por WhatsApp ↗</a>
+        </div>
+      </article>
+
+      <div class="extras fade">
+        <h3>Extras</h3>
+        <div class="extra-grid">
+          <div class="extra">DETALLADO DE CEJAS<strong>$4.000</strong></div>
+          <div class="extra">MASCARILLA (NARIZ)<strong>$5.000</strong></div>
+          <div class="extra">PEINADO/STYLING FINAL (IDEAL PARA EVENTOS)<strong>$3.000</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trabajos">
+  <div class="wrap">
+    <div class="section-heading fade">
+      <div><div class="eyebrow">Portfolio</div><h2>El trabajo habla.</h2></div>
+      <p class="section-intro">Una selección de cortes realizados. Tocá cualquier imagen para verla en grande y recorrer la galería.</p>
+    </div>
+    <div class="gallery fade" id="gallery">
+      <button class="gallery-item" type="button" data-index="0" aria-label="Ver trabajo 1"><img src="CEC090FE-41E4-4024-B8DC-72FD4BF8FD91.png" alt="Trabajo de corte de cabello 1" loading="lazy"></button>
+      <button class="gallery-item" type="button" data-index="1" aria-label="Ver trabajo 2"><img src="C6322AEC-FE1B-4A3D-9FF5-4AC15FA05D73.png" alt="Trabajo de corte de cabello 2" loading="lazy"></button>
+      <button class="gallery-item" type="button" data-index="2" aria-label="Ver trabajo 3"><img src="A96C71F6-855B-4CA0-8698-DC47698EE5B8.png" alt="Trabajo de corte de cabello 3" loading="lazy"></button>
+      <button class="gallery-item" type="button" data-index="3" aria-label="Ver trabajo 4"><img src="980BFA8C-78C1-492D-9A56-682A25A187D1.png" alt="Trabajo de corte de cabello 4" loading="lazy"></button>
+      <button class="gallery-item" type="button" data-index="4" aria-label="Ver trabajo 5"><img src="5D8ADFB9-A2EC-4256-A1A1-ABC5681EF553.png" alt="Trabajo de corte de cabello 5" loading="lazy"></button>
+      <button class="gallery-item" type="button" data-index="5" aria-label="Ver trabajo 6"><img src="535F74A0-401E-4F79-AFBC-8BAD6D2CD5BB.png" alt="Trabajo de corte de cabello 6" loading="lazy"></button>
+      <button class="gallery-item" type="button" data-index="6" aria-label="Ver trabajo 7"><img src="21165A5B-35D7-4D3E-8585-62B1B0B45F23.png" alt="Trabajo de corte de cabello 7" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<section class="section reviews" id="opiniones">
+  <div class="wrap">
+    <div class="section-heading fade">
+      <div><div class="eyebrow">Opiniones compartidas</div><h2>La confianza se gana<br>en cada corte.</h2></div>
+      <p class="section-intro">La experiencia de quienes me eligen.</p>
+    </div>
+    <div class="review-top">★★★★★ &nbsp; RESEÑAS DE CLIENTES</div>
+    <div class="review-grid">
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Nunca un mal corte del sabas, siempre impecable”</blockquote><footer>Marcos Yanzon · 2 oct 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Excente atención por parte de Sabas”</blockquote><footer>Raul Alfredo Doña · 1 oct 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Es el Messi del rubro peluquería! Jajajaja un crack”</blockquote><footer>Frank Gomez · 16 sept 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Excelente servicio, muy atento a los detalles”</blockquote><footer>Samuel Sanchez · 13 sept 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Muy buen corte como siempre un crack!”</blockquote><footer>beto fernandez · 8 sept 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“La buena atención, desde hace 3 años me pego con el corte que quiero”</blockquote><footer>Facundo Quiroga · 29 ago 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Impecable como siempre”</blockquote><footer>Esteban Costella · 21 ago 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Excelente atención, muy detallista en su trabajo, 100% recomendado”</blockquote><footer>julian tapia · 12 ago 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Muy buena..Excelente atencion y el trabajo de Sabas muy profesional”</blockquote><footer>Raul Alfredo Doña · 27 jul 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Excelente! Un crack saba👏”</blockquote><footer>Frank Gomez · 24 jul 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Excelente”</blockquote><footer>Paul Monteleone · 11 jul 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Buena atención y excelente servicio”</blockquote><footer>Gustavo Fredes · 8 jul 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Muy buena atención, excelente el corte, para recomendar 👏”</blockquote><footer>Juan Carlos Andrada · 17 jun 2026</footer></article>
+      <article class="review"><div class="stars">★★★★★</div><blockquote>“Atención y servicio excelente como de costumbre”</blockquote><footer>Juan Ignacio Mainete · 10 jun 2026</footer></article>
+    </div>
+    <p class="disclaimer">Reseñas compartidas por Sabas, provenientes de Fresha y correspondientes a su trabajo en Biondo Barbería. Se muestran como opiniones aportadas, no como una calificación verificada de esta web.</p>
+  </div>
+</section>
+
+<section class="section" id="preguntas">
+  <div class="wrap">
+    <div class="section-heading fade">
+      <div><div class="eyebrow">Antes de reservar</div><h2>Preguntas frecuentes.</h2></div>
+      <p class="section-intro">Si te queda alguna duda, escribime por WhatsApp y lo vemos.</p>
+    </div>
+    <div class="faq-list">
+      <details><summary>¿Cuánto dura cada servicio?</summary><p>El cambio de look dura 50 minutos; el cambio de look completo, 80 minutos; y el servicio Signature, 1 hora y 40 minutos.</p></details>
+      <details><summary>¿Puedo reservar a domicilio?</summary><p>Consultame por WhatsApp para confirmar disponibilidad y coordinar los detalles de la atención a domicilio.</p></details>
+      <details><summary>¿Qué medios de pago aceptás?</summary><p>Consultame antes de tu turno para confirmar los medios de pago disponibles.</p></details>
+      <details><summary>¿Cómo reservo un turno?</summary><p>Elegí el servicio y tocá “Reservar por WhatsApp”. Se abrirá un mensaje preparado para que puedas enviármelo y coordinemos el horario.</p></details>
+      <details><summary>¿Los turnos están sujetos a disponibilidad?</summary><p>Sí. Escribime para consultar los horarios disponibles y confirmar tu reserva.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contacto">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Tu próximo cambio empieza acá</div>
+      <h2>Hablemos de<br><em style="color:var(--dorado);font-weight:400">tu estilo.</em></h2>
+      <p>Consultá disponibilidad, elegí tu servicio y coordinemos tu próximo turno.</p>
+      <div class="actions">
+        <a class="button" id="contactWhatsApp" href="#">Escribime por WhatsApp ↗</a>
+        <button class="button" id="sharePage" type="button">Compartir página ↗</button>
+      </div>
+    </div>
+    <div class="contact-note">Atención personalizada<br><br>San Juan, Argentina<br><br>Reservas con confirmación previa.</div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>SABAS OLIVERA · ASESOR DE IMAGEN</span>
+    <div class="footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="#inicio">Volver arriba ↑</a></div>
+    <span>© <span id="year"></span></span>
+  </div>
+</footer>
+
+<a class="whatsapp-float" id="floatingWhatsApp" href="#" aria-label="Contactar por WhatsApp">WA</a>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería de trabajos">
+  <button class="lb-button lb-close" id="lbClose" type="button" aria-label="Cerrar">×</button>
+  <button class="lb-button lb-prev" id="lbPrev" type="button" aria-label="Imagen anterior">‹</button>
+  <img id="lbImage" src="" alt="Trabajo de corte ampliado">
+  <button class="lb-button lb-next" id="lbNext" type="button" aria-label="Imagen siguiente">›</button>
+  <div class="lb-count" id="lbCount"></div>
 </div>
-          </div>
-          <div class="portrait-caption"><span>Identidad · Técnica · Detalle</span><span>01 / SO</span></div>
-        </div>
-      </div>
-    </section>
 
-    <div class="intro-strip"><div class="wrap strip-grid">
-      <div class="strip-item"><strong>Atención al detalle</strong><span>Técnica y precisión en cada terminación.</span></div>
-      <div class="strip-item"><strong>Tu estilo, primero</strong><span>Un resultado pensado para vos.</span></div>
-      <div class="strip-item"><strong>Reservas simples</strong><span>Coordiná tu turno directamente por WhatsApp.</span></div>
-    </div></div>
+<script>
+(() => {
+  const WA_NUMBER = "5492644835956";
+  const waUrl = message => "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(message);
 
-    <section class="section" id="trabajos"><div class="wrap">
-      <div class="section-head reveal"><div class="eyebrow">Portfolio</div><h2>El trabajo habla <span class="gold">por sí solo.</span></h2><p>Una selección de cortes y detalles realizados en la barbería. Cada cabeza es distinta; el objetivo es encontrar lo que mejor te queda.</p></div>
-      <div class="gallery-grid">
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/sabasolivera/sabasbarber/main/CEC090FE-41E4-4024-B8DC-72FD4BF8FD91.png" alt="Trabajo de barbería realizado por Sabas" loading="lazy"></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/sabasolivera/sabasbarber/main/C6322AEC-FE1B-4A3D-9FF5-4AC15FA05D73.png" alt="Detalle de corte realizado por Sabas" loading="lazy"></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/sabasolivera/sabasbarber/main/A96C71F6-855B-4CA0-8698-DC47698EE5B8.png" alt="Corte de cabello, portfolio de Sabas" loading="lazy"></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/sabasolivera/sabasbarber/main/980BFA8C-78C1-492D-9A56-682A25A187D1.png" alt="Trabajo de corte y terminaciones" loading="lazy"></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/sabasolivera/sabasbarber/main/5D8ADFB9-A2EC-4256-A1A1-ABC5681EF553.png" alt="Resultado de corte de cabello" loading="lazy"></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/sabasolivera/sabasbarber/main/535F74A0-401E-4F79-AFBC-8BAD6D2CD5BB.png" alt="Detalle de un corte realizado en barbería" loading="lazy"></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/sabasolivera/sabasbarber/main/21165A5B-35D7-4D3E-8585-62B1B0B45F23.png" alt="Trabajo de barbería de Sabas Olivera" loading="lazy"></figure>
-      </div>
-      <p class="gallery-note">Los resultados pueden variar según el cabello, el crecimiento y el estilo elegido.</p>
-    </div></section>
+  document.querySelectorAll(".book").forEach(link => {
+    link.href = waUrl("Hola Sabas, quiero consultar disponibilidad para " + link.dataset.service + " (" + link.dataset.price + ").");
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+  });
 
-    <section class="section services prices-locked" id="servicios"><div class="wrap">
-      <div class="section-head reveal"><div class="eyebrow">Servicios</div><h2>Elegí lo que <span class="gold">necesitás.</span></h2><p>Reservá el servicio que mejor encaje con tu idea. Si no sabés cuál elegir, escribime y lo vemos juntos.</p></div>
-      <div class="service-grid">
-        <article class="service-card reveal"><div class="service-number">01 / ESENCIAL</div><h3>Cambio de look</h3><p>Un corte trabajado al detalle, combinando técnicas y texturas para encontrar una forma que vaya con vos.</p><div class="service-meta"><span>◷ 50 minutos</span><span>Atención personalizada</span></div><div class="service-price">Desde $19.900</div><a class="btn btn-outline book-service" data-service="Cambio de look" data-price="Desde $19.900" href="https://wa.me/5492644835956?text=Hola%20Sabas%2C%20quiero%20reservar%20Cambio%20de%20look%20(desde%20%2419.900)" target="_blank" rel="noopener">Reservar este servicio ↗</a></article>
-        <article class="service-card reveal"><div class="service-number">02 / COMPLETO</div><h3>Cambio de look completo</h3><p>Corte y barba con atención a las proporciones, los contornos y el acabado final.</p><div class="service-meta"><span>◷ 80 minutos</span><span>Corte + barba</span></div><div class="service-price">Desde $27.900</div><a class="btn btn-outline book-service" data-service="Cambio de look completo" data-price="Desde $27.900" href="https://wa.me/5492644835956?text=Hola%20Sabas%2C%20quiero%20reservar%20Cambio%20de%20look%20completo%20(desde%20%2427.900)" target="_blank" rel="noopener">Reservar este servicio ↗</a></article>
-        <article class="service-card featured reveal"><div class="service-number">03 / SIGNATURE</div><h3>Servicio Signature</h3><p>Una experiencia más completa, con corte, detalles personalizados y limpieza facial para cerrar el servicio.</p><div class="service-meta"><span>◷ 1 h 40 min</span><span>Experiencia integral</span></div><div class="service-price"><span style="font-size:.78rem;color:#aaa69e;text-decoration:line-through;font-weight:500">Precio a confirmar</span><br>$39.900</div><a class="btn btn-primary book-service" data-service="Servicio Signature" data-price="$39.900" href="https://wa.me/5492644835956?text=Hola%20Sabas%2C%20quiero%20consultar%20por%20el%20Servicio%20Signature%20($39.900)" target="_blank" rel="noopener">Consultar / reservar ↗</a></article>
-      </div>
-      <div class="price-gate reveal" id="priceGate"><div><h3>Los precios, después de conocer mi trabajo.</h3><p>Visitá mi Instagram y después tocá “Mostrar precios”. La web no puede comprobar si realmente seguís la cuenta.</p></div><div class="hero-actions"><a class="btn btn-outline" href="https://www.instagram.com/sabas.barber/" target="_blank" rel="noopener">Visitar Instagram ↗</a><button class="btn btn-primary" id="showPrices" type="button">Mostrar precios</button></div></div>
-      <div class="extras-grid reveal" aria-label="Servicios adicionales">
-        <div class="extra"><span>Perfilado de cejas</span><strong>+$4.000</strong></div><div class="extra"><span>Mascarilla para la nariz</span><strong>+$5.000</strong></div><div class="extra"><span>Peinado y styling</span><strong>+$3.000</strong></div>
-      </div>
-      <p class="gallery-note">Los valores pueden cambiar. Confirmá el precio final al coordinar el turno.</p>
-    </div></section>
+  const generalMessage = "Hola Sabas, quiero consultar disponibilidad para reservar un turno.";
+  ["contactWhatsApp", "floatingWhatsApp"].forEach(id => {
+    const link = document.getElementById(id);
+    link.href = waUrl(generalMessage);
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+  });
 
-    <section class="section" id="opiniones"><div class="wrap">
-      <div class="section-head reveal"><div class="eyebrow">Opiniones de clientes</div><h2>La experiencia de quienes <span class="gold">me eligen.</span></h2><p>La confianza se gana en cada corte.</p></div>
-      <div class="reviews-top reveal"><div class="rating-number">5,0</div><div><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><div class="rating-caption">14 reseñas compartidas · Todas de 5 estrellas</div></div></div>
-      <div class="reviews-grid">
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Marcos Yanzon</div><div class="review-date">2 oct 2026</div></div><div class="stars">★★★★★</div><blockquote>“Nunca un mal corte del Sabas, siempre impecable”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Raul Alfredo Doña</div><div class="review-date">1 oct 2026</div></div><div class="stars">★★★★★</div><blockquote>“Excente atención por parte de Sabas”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Frank Gomez</div><div class="review-date">16 sept 2026</div></div><div class="stars">★★★★★</div><blockquote>“Es el Messi del rubro peluquería! Jajajaja un crack”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Samuel Sanchez</div><div class="review-date">13 sept 2026</div></div><div class="stars">★★★★★</div><blockquote>“Excelente servicio, muy atento a los detalles”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">beto fernandez</div><div class="review-date">8 sept 2026</div></div><div class="stars">★★★★★</div><blockquote>“Muy buen corte como siempre un crack!”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Facundo Quiroga</div><div class="review-date">29 ago 2026</div></div><div class="stars">★★★★★</div><blockquote>“La buena atención, desde hace 3 años me pego con el corte que quiero”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Esteban Costella</div><div class="review-date">21 ago 2026</div></div><div class="stars">★★★★★</div><blockquote>“Impecable como siempre”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">julian tapia</div><div class="review-date">12 ago 2026</div></div><div class="stars">★★★★★</div><blockquote>“Excelente atención, muy detallista en su trabajo, 100% recomendado”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Raul Alfredo Doña</div><div class="review-date">27 jul 2026</div></div><div class="stars">★★★★★</div><blockquote>“Muy buena..Excelente atencion y el trabajo de Sabas muy profesional”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Frank Gomez</div><div class="review-date">24 jul 2026</div></div><div class="stars">★★★★★</div><blockquote>“Excelente! Un crack saba👏”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Paul Monteleone</div><div class="review-date">11 jul 2026</div></div><div class="stars">★★★★★</div><blockquote>“Excelente”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Gustavo Fredes</div><div class="review-date">8 jul 2026</div></div><div class="stars">★★★★★</div><blockquote>“Buena atención y excelente servicio”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Juan Carlos Andrada</div><div class="review-date">17 jun 2026</div></div><div class="stars">★★★★★</div><blockquote>“Muy buena atención, excelente el corte, para recomendar 👏”</blockquote></article>
-        <article class="review-card reveal"><div class="review-top"><div class="review-name">Juan Ignacio Mainete</div><div class="review-date">10 jun 2026</div></div><div class="stars">★★★★★</div><blockquote>“Atención y servicio excelente como de costumbre”</blockquote></article>
-      </div>
-      <p class="review-source">Reseñas compartidas por Sabas, provenientes de Fresha y correspondientes a su trabajo en Biondo Barbería. Se muestran como opiniones aportadas, no como una calificación verificada de esta web.</p>
-    </div></section>
+  document.getElementById("revealPhoto").addEventListener("click", () => {
+    const area = document.getElementById("photoReveal");
+    area.classList.add("open");
+    document.getElementById("revealPhoto").textContent = "Foto revelada ✓";
+  });
 
-    <div class="availability"><div class="wrap availability-inner"><div class="availability-copy"><span class="status-dot"></span><div><strong>Turnos con coordinación previa</strong><span>Consultá por WhatsApp para confirmar disponibilidad actual.</span></div></div><a class="text-link" href="https://wa.me/5492644835956?text=Hola%20Sabas%2C%20%C2%BFqu%C3%A9%20turnos%20ten%C3%A9s%20disponibles%3F" target="_blank" rel="noopener">Consultar horarios ↗</a></div></div>
+  document.getElementById("showServices").addEventListener("click", () => {
+    document.getElementById("serviceContent").hidden = false;
+    document.getElementById("instagramGate").style.display = "none";
+    document.querySelectorAll("#serviceContent .fade").forEach(el => observer.observe(el));
+  });
 
-    <section class="section" id="preguntas"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">Información útil</div><h2>Antes de <span class="gold">reservar.</span></h2><p>Lo importante, claro desde el principio.</p></div>
-      <div class="faq-list reveal">
-        <details><summary>¿Cuánto dura cada servicio?</summary><p>El Cambio de look dura aproximadamente 50 minutos; el Cambio de look completo, 80 minutos; y el Servicio Signature, 1 hora y 40 minutos. Los tiempos pueden variar según lo que necesites.</p></details>
-        <details><summary>¿Hacés atención a domicilio?</summary><p>Podés consultar por atención a domicilio y disponibilidad por WhatsApp. El valor depende del servicio y de la coordinación.</p></details>
-        <details><summary>¿Qué medios de pago aceptás?</summary><p>Consultame al reservar para confirmar los medios de pago disponibles en ese momento.</p></details>
-        <details><summary>¿Cómo reservo un turno?</summary><p>Elegí el servicio y tocá el botón de WhatsApp. Se abrirá un mensaje preparado para que puedas enviarlo y coordinar el horario.</p></details>
-        <details><summary>¿Y si no sé qué servicio elegir?</summary><p>Escribime y contame qué te gustaría cambiar. Podemos conversar sobre el estilo que buscás y elegir el servicio más adecuado.</p></details>
-      </div>
-    </div></section>
+  document.getElementById("sharePage").addEventListener("click", async () => {
+    const data = {
+      title: document.title,
+      text: "Conocé mis servicios y trabajos.",
+      url: location.href
+    };
+    if (navigator.share) {
+      try { await navigator.share(data); } catch (error) {}
+    } else {
+      window.open(waUrl("Te comparto mi página: " + location.href), "_blank", "noopener");
+    }
+  });
 
-    <section class="closing"><div class="wrap reveal"><div class="eyebrow">Tu próximo turno empieza acá</div><h2>Un buen corte cambia más que <span class="gold">tu pelo.</span></h2><p>Contame qué tenés en mente y coordinamos un turno.</p><div class="closing-actions"><a class="btn btn-primary" href="https://wa.me/5492644835956?text=Hola%20Sabas%2C%20quiero%20coordinar%20un%20turno" target="_blank" rel="noopener">Reservar por WhatsApp ↗</a><button class="btn btn-outline" id="shareButton">Compartir página ↗</button></div></div></section>
-  </main>
+  document.getElementById("year").textContent = new Date().getFullYear();
 
-  <footer class="footer"><div class="wrap footer-inner"><div><a class="brand" href="#inicio">SO<span>.</span></a><br><small>Sabas Olivera · Asesor de imagen</small></div><div class="footer-links"><a href="https://www.instagram.com/sabas.barber/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://wa.me/5492644835956" target="_blank" rel="noopener">WhatsApp ↗</a><a href="#inicio">Volver arriba ↑</a></div><small>© <span id="year"></span> Sabas Olivera</small></div></footer>
-  <a class="floating-wa" href="https://wa.me/5492644835956?text=Hola%20Sabas%2C%20quiero%20consultar%20por%20un%20turno" target="_blank" rel="noopener" aria-label="Reservar por WhatsApp">↗</a>
-  <div class="toast" id="toast" role="status" aria-live="polite">Enlace copiado</div>
-  <script>
-    const menuToggle=document.getElementById('menuToggle');
-    const navLinks=document.getElementById('navLinks');
-    menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'Cerrar':'Menú';});
-    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='Menú';}));
-    document.getElementById('revealPortrait').addEventListener('click',()=>{const frame=document.getElementById('portraitFrame');frame.classList.remove('portrait-hidden');frame.classList.add('portrait-visible');});
-    document.getElementById('showPrices').addEventListener('click',()=>{document.getElementById('servicios').classList.remove('prices-locked');document.getElementById('priceGate').querySelector('h3').textContent='Estos son los servicios y sus precios.';document.getElementById('priceGate').querySelector('p').textContent='Si tenés dudas sobre qué servicio elegir, escribime y lo vemos juntos.';document.getElementById('showPrices').textContent='Precios visibles ✓';document.getElementById('showPrices').disabled=true;document.getElementById('showPrices').style.opacity='.7';});
-    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in-view');observer.unobserve(entry.target);}}),{threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-    document.getElementById('year').textContent=new Date().getFullYear();
-    const toast=document.getElementById('toast');
-    document.getElementById('shareButton').addEventListener('click',async()=>{const shareData={title:'Sabas Olivera — Asesor de imagen',text:'Conocé mis trabajos y servicios. Reservá tu turno por WhatsApp.',url:window.location.href};try{if(navigator.share){await navigator.share(shareData);}else if(navigator.clipboard){await navigator.clipboard.writeText(window.location.href);toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2200);}else{window.open('https://wa.me/?text='+encodeURIComponent(shareData.text+' '+shareData.url),'_blank','noopener');}}catch(e){if(e.name!=='AbortError'){window.open('https://wa.me/?text='+encodeURIComponent(shareData.text+' '+shareData.url),'_blank','noopener');}}});
-  </script>
+  const items = Array.from(document.querySelectorAll(".gallery-item"));
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lbImage");
+  const counter = document.getElementById("lbCount");
+  let current = 0;
+  let touchStartX = 0;
+
+  function showImage(index) {
+    current = (index + items.length) % items.length;
+    lightboxImage.src = items[current].querySelector("img").src;
+    lightboxImage.alt = "Trabajo de corte " + (current + 1);
+    counter.textContent = String(current + 1).padStart(2, "0") + " / " + String(items.length).padStart(2, "0");
+  }
+
+  function openLightbox(index) {
+    showImage(index);
+    lightbox.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  items.forEach((item, index) => item.addEventListener("click", () => openLightbox(index)));
+  document.getElementById("lbClose").addEventListener("click", closeLightbox);
+  document.getElementById("lbPrev").addEventListener("click", () => showImage(current - 1));
+  document.getElementById("lbNext").addEventListener("click", () => showImage(current + 1));
+  lightbox.addEventListener("click", event => {
+    if (event.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener("keydown", event => {
+    if (!lightbox.classList.contains("open")) return;
+    if (event.key === "Escape") closeLightbox();
+    if (event.key === "ArrowLeft") showImage(current - 1);
+    if (event.key === "ArrowRight") showImage(current + 1);
+  });
+
+  lightbox.addEventListener("touchstart", event => {
+    touchStartX = event.changedTouches[0].screenX;
+  }, { passive: true });
+
+  lightbox.addEventListener("touchend", event => {
+    const delta = event.changedTouches[0].screenX - touchStartX;
+    if (Math.abs(delta) > 45) showImage(current + (delta < 0 ? 1 : -1));
+  }, { passive: true });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".fade").forEach(element => observer.observe(element));
+})();
+</script>
 </body>
 </html>
